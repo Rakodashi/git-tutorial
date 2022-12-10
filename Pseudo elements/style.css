@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272727;
+    color: #fff;
+}
+p {
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+p::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #ff652f;
+}
+p::after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #ff652f;
+}
+
+a {
+    color: #ff652f;
+    text-decoration: none;
+}
+a[href$='.pdf']::after {
+    content: '\f1c1';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.9em;
+}
+a[href^='http']::after {
+    content: '\f08e';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.9em;
+}

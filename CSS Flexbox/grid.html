@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<title>Responsive Image Grid</title>
+<html>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 25%;
+        }
+
+        .column img {
+            padding: 4px;
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+    <body>
+        
+        <div class="header">
+            <h1>Responsive Image Grid</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://unsplash.it/300/300">
+                <img src="https://unsplash.it/301/300">
+                <img src="https://unsplash.it/302/300">
+                <img src="https://unsplash.it/303/300">
+                <img src="https://unsplash.it/304/300">
+                <img src="https://unsplash.it/305/300">
+                <img src="https://unsplash.it/306/300">
+            </div>
+
+            <div class="column">
+                <img src="https://unsplash.it/307/300">
+                <img src="https://unsplash.it/308/300">
+                <img src="https://unsplash.it/309/300">
+                <img src="https://unsplash.it/310/300">
+                <img src="https://unsplash.it/311/300">
+                <img src="https://unsplash.it/312/300">
+                <img src="https://unsplash.it/313/300">
+            </div>
+
+            <div class="column">
+                <img src="https://unsplash.it/314/300">
+                <img src="https://unsplash.it/315/300">
+                <img src="https://unsplash.it/316/300">
+                <img src="https://unsplash.it/317/300">
+                <img src="https://unsplash.it/318/300">
+            </div>
+
+            <div class="column">
+                <img src="https://unsplash.it/319/300">
+                <img src="https://unsplash.it/320/300">
+                <img src="https://unsplash.it/321/300">
+                <img src="https://unsplash.it/322/300">
+                <img src="https://unsplash.it/323/300">
+                <img src="https://unsplash.it/324/300">
+            </div>
+        </div>
+
+    </body>
+</html>

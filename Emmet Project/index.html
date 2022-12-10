@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet Demo</title>
+</head>
+<body>
+
+    <div class="myClass">This rules!</div>
+    <!-- div+p+bq -->
+
+    <div></div>
+    <p></p>
+    <blockquote></blockquote>
+
+    <!-- nav>ul>li -->
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- section.main-section>h1.title{My Title}+p.body{Body text here} -->
+    <section class="main-section">
+        <h1 class="title">My Title</h1>
+        <p class="body">Body text here</p>
+    </section>
+
+    <!-- div+div>p>span>em^bq -->
+    <div></div>
+    <div>
+        <p>
+            <span><em></em></span>
+            <blockquote></blockquote>
+        </p>
+    </div>
+
+    <!-- div+(div>p>span>em)+bq -->
+    <div></div>
+    <div>
+        <p><span><em></em></span></p>
+    </div>
+    <blockquote></blockquote>
+
+    <!-- or -->
+    <!-- main>(section>h1+p+btn)+section -->
+    <main>
+        <section>
+            <h1></h1>
+            <p></p>
+            <button></button>
+        </section>
+        <section></section>
+    </main>
+
+    <!-- ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- ul>li{Item 1}*5 -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+    <!-- or -->
+    <!-- ul>li{Item $}*5 -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- or -->
+    <!-- ul>li.item${Item $@3}*5 -->
+    <ul>
+        <li class="item1">Item 3</li>
+        <li class="item2">Item 4</li>
+        <li class="item3">Item 5</li>
+        <li class="item4">Item 6</li>
+        <li class="item5">Item 7</li>
+    </ul>
+
+    <p title="my Title"></p>
+    <form action="" method="get"></form>
+
+    <!-- p>{Click }+a{here}+{ to continue} -->
+    <p>Click <a href="">here</a> to continue</p>
+
+</body>
+</html>
